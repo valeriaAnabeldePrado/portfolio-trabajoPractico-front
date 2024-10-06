@@ -21,15 +21,37 @@
   /* Tamaño de fuente */
   --fuenteTexto: clamp(1em, 1.6em, 2vw);
   --fontTamnio: clamp(1em, 3vw, 1.4em);
-  --fontTamnioTitle: clamp(1em, 8vw, 11em);
-  --fontTamnioSubTitle: clamp(1em, 3vw, 4em);
+  --fontTamnioTitle: 10em;
+  --fontTitleTablet: 6.5em;
+  --fontTitlePhone: 4em;
+  --fontTamnioSubTitle: 6em;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+/*///////////////// NAV//////////////////*/
+.navbarMenu {
+  z-index: 2;
+  top: 15px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  border: 1px solid rgba(255, 255, 255, 0.175);
+  border-radius: 30px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.funteNav {
+  font-size: var(--fuenteTexto) !important;
+}
+/*///////////////// CUERPO DE LA WEB//////////////////*/
 body {
   line-height: 1.2;
   padding: var(--padding-x);
@@ -51,18 +73,10 @@ body {
   justify-content: end;
 }
 
-.banner h1 {
-  font-size: var(--fontTamnioSubTitle);
-  position: absolute;
-  font-weight: 200;
-  top: 1rem;
-  left: 5%;
-}
-
-h2 {
+.h2Color {
   font-family: var(--fuente-poppins-italic);
   font-style: var(--style-font);
-  font-weight: 300;
+  font-weight: 200;
   font-size: var(--fontTamnioTitle);
 }
 
@@ -74,8 +88,11 @@ h2 {
 
 .banner h2:nth-child(n + 3) {
   text-align: right;
+  font-size: var(--fontTamnioTitle);
+  font-family: var(--fuente-poppins-italic);
+  font-style: var(--style-font);
 }
-/*Seccion dos*/
+/*/////////////////SECCION DOS//////////////////*/
 .textSectionTwo {
   font-size: var(--fontTamnio);
   margin: 3rem 0;
@@ -85,19 +102,15 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .skillsContainerTitle h3 {
   font-size: var(--fontTamnioSubTitle);
   font-style: var(--style-font);
   margin: 2rem 0;
+  font-weight: 200;
 }
-.h3Skills {
-  padding-left: 2rem;
-  font-size: var(--fontTamnioSubTitle);
-  font-style: var(--style-font);
-  font-weight: 100;
-}
+
 .containerCarruselSkills {
   display: flex;
   flex-direction: column;
@@ -107,70 +120,34 @@ h2 {
 }
 .containerS {
   display: flex;
-  flex-direction: row;
-}
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.containerButton {
-  display: flex;
   flex-direction: column;
-  align-self: center;
-  gap: 3rem;
-  margin: 0 2rem;
+  width: 100%;
 }
-.buttonM {
-  border-radius: 50%;
-  padding: 0.5rem;
-  cursor: pointer;
-  background-color: transparent;
-  border: 3px solid var(--color-violeta);
-  transition: 200ms all ease-in-out;
-}
-.buttonM:hover {
-  background-color: var(--color-violeta-hover);
-}
+
 .table {
   display: none;
 }
 .cardsContainer {
   margin: 3rem 0;
-  height: 62vh;
-  overflow: hidden;
+  width: 100%;
 }
-.skillsTecno {
-}
-.skillsDesing {
-}
-.softSkills {
-}
+
 .card {
   background: rgba(255, 255, 255, 0.35);
   -webkit-backdrop-filter: blur(13px);
   backdrop-filter: blur(13px);
   border: 1px solid rgba(255, 255, 255, 0.175);
   border-radius: 30px;
-  padding: 2rem;
-  height: 25vh;
-  width: 15vw;
-  margin: 2rem;
+  padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
-.card > p {
-  font-size: 1.1em;
+.cardP {
+  font-size: var(--fuenteTexto);
   font-weight: 400;
 }
-img {
-  height: 50%;
-  margin-bottom: 1.5rem;
-}
 
-/* Footer y form */
-.footer {
+/*/////////////////FOOTER Y FORM//////////////////*/
+.footerM {
   height: 100dvh;
   margin-top: 8rem;
   display: flex;
@@ -228,4 +205,58 @@ img {
 
 .enviar:hover {
   background-color: var(--color-violeta-hover);
+}
+
+@media screen and (width <= 1000px) {
+  .banner h2:nth-child(2),
+  .banner h2:nth-child(n + 3),
+  .h2Color {
+    font-size: var(--fontTitleTablet);
+  }
+  .banner {
+    height: 80dvh;
+  }
+  .textSectionTwo {
+    width: 80%;
+  }
+  .skillsContainerTitle h3 {
+    font-size: 4.5em;
+  }
+  .footerM {
+    height: auto;
+    margin-top: 4rem;
+  }
+}
+@media screen and (width <= 646px) {
+  .banner h2:nth-child(2),
+  .banner h2:nth-child(n + 3),
+  .h2Color {
+    font-size: var(--fontTitlePhone);
+  }
+  .banner {
+    height: 50dvh;
+  }
+  .textSectionTwo {
+    width: 100%;
+  }
+  .formulario {
+    max-width: 100%;
+  }
+  .footerM {
+    height: auto;
+    margin-top: 0;
+  }
+}
+@media screen and (width <= 450px) {
+  .banner h2:nth-child(2),
+  .banner h2:nth-child(n + 3),
+  .h2Color {
+    font-size: 3em;
+  }
+  .banner {
+    height: 45dvh;
+  }
+  .skillsContainerTitle h3 {
+    font-size: 3em;
+  }
 }

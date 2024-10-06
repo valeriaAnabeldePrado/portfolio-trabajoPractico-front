@@ -15,151 +15,139 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link href="https://fonts.cdnfonts.com/css/sulphur-point" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
                 
   </head>
   <body>
+    
+    <nav class="navbarMenu">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a href="#sobreMi" >Sobre mí</a></li>
+            <li><a href="#habilidades" >Habilidades</a></li>
+            <li><a href="#contacto" >Contáctate</a></li>
+          </ul>
+        </div>
+     
+      <div class="">
+        <a class="btn btn-ghost text-xl"><h1 class="funteNav">Valeria de Prado</h1></a>
+      </div>   
+    </nav>
+      
+
     <header class="banner">
-      <h1>Valeria de Prado</h1>
-      <h2>CREATIVE</h2>
-      <h2>SOFTWARE</h2>
-      <h2>DEVELOPER</h2>
+      <h2></h2>
+      <h2 class="h2Color">CREATIVE</h2>
+      <h2 >SOFTWARE</h2>
+      <h2 >DEVELOPER</h2>
     </header>
     <main class="sectionTwo">
-    <section class="containerTwo">
-       <h2>GRAPHIC</h2>
-       <H2>DESIGNER</H2>
-        <p class="textSectionTwo">Soy desarrolladora FrontEnd y diseñadora gráfica.
-Aplico mi creatividad y versatilidad para proporcionar
-soluciones estéticas de alta calidad, funcionales e integrales.
-Tengo experiencia en HTML, Css, js, React.js, Next.js, CSS,
-Sass, Gsap, React Three Fiber y herramientas de desarrollo
-modernas como Tailwind, NextUI, Ai, Ps y Figma.
-Mi enfoque se orienta hacia la atención al detalle de la forma
-más óptima posible.
-Mi objetivo es crear experiencias exclusivas e inolvidables
-que no solo impulsen la marca, sino que también
-establezcan una conexión efectiva con la audiencia.
-Estoy interesada en el puesto de desarrolladora de Software
-Frontend, donde pueda aplicar mis habilidades en diseño,
-creación y codificación de interfaces de usuario.</p>
+    <section class="containerTwo" id="sobreMi">
+       <h2 class="h2Color">GRAPHIC</h2>
+       <H2 class="h2Color">DESIGNER</H2>
+        <p  class="textSectionTwo">Soy desarrolladora FrontEnd y diseñadora gráfica.
+        Aplico mi creatividad y versatilidad para proporcionar
+        soluciones estéticas de alta calidad, funcionales e integrales.
+        Tengo experiencia en HTML, Css, js, React.js, Next.js, CSS,
+        Sass, Gsap, React Three Fiber y herramientas de desarrollo
+        modernas como Tailwind, NextUI, Ai, Ps y Figma.
+        Mi enfoque se orienta hacia la atención al detalle de la forma
+        más óptima posible.
+        Mi objetivo es crear experiencias exclusivas e inolvidables
+        que no solo impulsen la marca, sino que también
+        establezcan una conexión efectiva con la audiencia.
+        Estoy interesada en el puesto de desarrolladora de Software
+        Frontend, donde pueda aplicar mis habilidades en diseño,
+        creación y codificación de interfaces de usuario.</p>
 
-      <div class="center containerCarruselSkills">
-        
+      <div class="center containerCarruselSkills" id="habilidades">
         <div class="skillsContainerTitle">
           <h3>Habilidades</h3>
-          <h3 id="skills" class="h3Skills">Técnicas</h3>
         </div>
-        <!-- Para futuro quiero hacer un swiper -->
+     
         <table class="table"></table>
         <div class="containerS">
          <section class="cardsContainer">
-            <div id="skillsTecno" class="cont skillsTecno">
-              <ul>
-                <li><div class="card">
-                  <img src="./asset/img/js.png" alt="logoImg"/>
-                  <p>JavaScript</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="./asset/img/kt.png" alt="logoImg"/>
-                  <p>Kotlin</p>
-                  <p>Jetpack</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="./asset/img/next.png" alt="logoImg"/>
-                  <p>Next.js</p>
-                  <p>React.js</p>
-                </div></li>
-              </ul>
-              <ul>
-                <li><div class="card">
-                  <img src="./asset/img/postgres.png" alt="logoImg"/>
-                  <p>PostgreSQL</p>
-                  <p>SQL</p>
-                  <p>Supabase</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="./asset/img/sass.png" alt="logoImg"/>
-                  <p>SASS</p>
-                  <p>Css</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="./asset/img/three.png" alt="logoImg"/>
-                  <p>Three.js</p>
-                  <p>React three fiber</p>
-                </div></li>
-              </ul>
-            </div>
-            <div id="skillsTecno" class="cont skillsDesing">
-              <ul>
-                <li><div class="card">
-                  <img src="" alt="logoImg"/>
-                </div></li>
-                <li><div class="card">
-                  <img src="" alt="logoImg"/>
-                  <p>Kotlin</p>
-                  <p>Jetpack</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="" alt="logoImg"/>
-                  <p>Next.js</p>
-                  <p>React.js</p>
-                </div></li>
-              </ul>
-              <ul>
-                <li><div class="card">
-                  <img src="" alt="logoImg"/>
-                  <p>PostgreSQL</p>
-                  <p>SQL</p>
-                  <p>Supabase</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="" alt="logoImg"/>
-                  <p>SASS</p>
-                  <p>Css</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="" alt="logoImg"/>
-                  <p>Three.js</p>
-                  <p>React three fiber</p>
-                </div></li>
-              </ul>
-            </div>
-            <div id="skillsTecno" class="cont softSkills">
-              <ul>
-                <li><div class="card">
-                  <img src="./asset/img/js.png" alt="logoImg"/>
-                  <p>JavaScript</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="./asset/img/kt.png" alt="logoImg"/>
-                  <p>Kotlin</p>
-                  <p>Jetpack</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="./asset/img/next.png" alt="logoImg"/>
-                  <p>Next.js</p>
-                  <p>React.js</p>
-                </div></li>
-              </ul>
-              <ul>
-                <li><div class="card">
-                  <img src="./asset/img/postgres.png" alt="logoImg"/>
-                  <p>PostgreSQL</p>
-                  <p>SQL</p>
-                  <p>Supabase</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="./asset/img/sass.png" alt="logoImg"/>
-                  <p>SASS</p>
-                  <p>Css</p>
-                </div></li>
-                <li><div class="card">
-                  <img src="./asset/img/three.png" alt="logoImg"/>
-                  <p>Three.js</p>
-                  <p>React three fiber</p>
-                </div></li>
-              </ul>
-            </div>
+            <div class="collapse collapse-arrow bg-base-200 "></div>
+              <div class="collapse collapse-arrow card mb-10">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title  cardP">Tecnologías Principales</div>
+                <div class="collapse-content">
+                  <ul>
+                    <li> <p class="cardP">JavaScript & TypeScript</p></li>
+                    <li> <p class="cardP">HTML</p></li>
+                    <li> <p class="cardP">CSS</p></li>
+                    <li> <p class="cardP">KOTLIN</p></li>
+                    <li> <p class="cardP">SQL</p></li>
+                  </ul>
+                 
+                </div>
+              </div>
+              <div class="collapse collapse-arrow card mb-10">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title  cardP">Librerías, Frameworks & entornos</div>
+                <div class="collapse-content">
+                   <ul>
+                    <li> <p class="cardP">React.js & Next.js</p></li>
+                    <li> <p class="cardP">React Three Fiber</p></li>
+                    <li> <p class="cardP">Three.js</p></li>
+                    <li> <p class="cardP">A-Frame</p></li>
+                    <li> <p class="cardP">8th-wall</p></li>
+                    <li> <p class="cardP">GSAP</p></li>
+                    <li> <p class="cardP">Node.js</p></li>
+                    <li> <p class="cardP">Jest</p></li>
+                    <li> <p class="cardP">Postman</p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow card mb-10">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title  cardP">Software de diseño & otros</div>
+                <div class="collapse-content">
+                  <ul>
+                    <li><p class="cardP">Adobe illustrator</p></li>
+                    <li><p class="cardP">Adobe photoshop</p></li>
+                    <li><p class="cardP">Figma</p></li>
+                    <li><p class="cardP">Blender</p></li> 
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="collapse collapse-arrow card mb-10">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title  cardP">Habilidades Blandas</div>
+                <div class="collapse-content">
+                  <ul>
+                       <li> <p class="cardP">Agile methodology</p></li>
+                    <li> <p class="cardP">Organización</p></li>
+                    <li> <p class="cardP">Buena comunicación</p></li>
+                    <li> <p class="cardP">Escucha activa</p></li>
+                    <li> <p class="cardP">Trabajo en equipo</p></li>
+                    <li> <p class="cardP">Habilidades avanzadas en diseño.</p></li>
+                    <li> <p class="cardP">Implementación de pruebas y testeo</p></li>
+                    <li> <p class="cardP">Responsabilidad y compromiso con los detalles</p></li>
+                    <li> <p class="cardP">Gestión efectiva del tiempo y priorización de tareas</p></li>
+                    <li> <p class="cardP">Resolución creativa y técnica de problemas en el desarrollo</p></li>
+                  </ul>
+                   
+                </div>
+              </div>
          </section>
         <section class="containerButton">
            <button  id="boton" class="buttonM prev" ></button>
@@ -170,8 +158,8 @@ creación y codificación de interfaces de usuario.</p>
 
     </main>  
     <!-- form para futuro con EmailJs -->
-    <footer class="footer">
-      <h2 class="titleContact">COTÁCTATE</h2>
+    <footer class="footerM" id="contacto">
+      <h2 class="titleContact h2Color">COTÁCTATE</h2>
       <form class="formulario">
         <div class="campo">
           <input type="text" id="nombre" name="nombre" placeholder="Nombre">
@@ -192,5 +180,6 @@ creación y codificación de interfaces de usuario.</p>
       </form>
 </footer>
     <script src="/js/moduleInteraction.js" ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
