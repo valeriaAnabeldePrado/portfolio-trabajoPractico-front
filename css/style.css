@@ -1,0 +1,231 @@
+/*-------------------------------------
+-----------------ATENCIÓN--------------
+----------aún no es responsive---------
+*/
+
+/* variables */
+:root {
+  /* Colores */
+  --color-fondo: #e7e6e6;
+  --color-fuente: #524c4c;
+  --color-violeta: #9747ff;
+  --color-violeta-hover: #6c0de9;
+
+  /* Fuentes */
+  --fuente-poppins-italic: "Poppins";
+  --fuente-sulphur-point: "Sulphur Point", regular;
+  --style-font: italic;
+  /*Padding*/
+  --padding-x: 0 8%;
+  --padding-y: 8% 0;
+  /* Tamaño de fuente */
+  --fuenteTexto: clamp(1em, 1.6em, 2vw);
+  --fontTamnio: clamp(1em, 3vw, 1.4em);
+  --fontTamnioTitle: clamp(1em, 8vw, 11em);
+  --fontTamnioSubTitle: clamp(1em, 3vw, 4em);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.2;
+  padding: var(--padding-x);
+  background: url("../asset/img/fondo.jpg") no-repeat;
+  position: relative;
+  color: var(--color-fuente);
+  background-color: var(--color-fondo);
+  font-family: var(--fuente-sulphur-point);
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+/* Banner */
+.banner {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.banner h1 {
+  font-size: var(--fontTamnioSubTitle);
+  position: absolute;
+  font-weight: 200;
+  top: 1rem;
+  left: 5%;
+}
+
+h2 {
+  font-family: var(--fuente-poppins-italic);
+  font-style: var(--style-font);
+  font-weight: 300;
+  font-size: var(--fontTamnioTitle);
+}
+
+.banner h2:nth-child(2) {
+  color: var(--color-violeta);
+  font-weight: 200;
+  text-align: left;
+}
+
+.banner h2:nth-child(n + 3) {
+  text-align: right;
+}
+/*Seccion dos*/
+.textSectionTwo {
+  font-size: var(--fontTamnio);
+  margin: 3rem 0;
+  width: 50%;
+}
+.skillsContainerTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.skillsContainerTitle h3 {
+  font-size: var(--fontTamnioSubTitle);
+  font-style: var(--style-font);
+  margin: 2rem 0;
+}
+.h3Skills {
+  padding-left: 2rem;
+  font-size: var(--fontTamnioSubTitle);
+  font-style: var(--style-font);
+  font-weight: 100;
+}
+.containerCarruselSkills {
+  display: flex;
+  flex-direction: column;
+}
+.cont {
+  width: 100%;
+}
+.containerS {
+  display: flex;
+  flex-direction: row;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerButton {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 3rem;
+  margin: 0 2rem;
+}
+.buttonM {
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid var(--color-violeta);
+  transition: 200ms all ease-in-out;
+}
+.buttonM:hover {
+  background-color: var(--color-violeta-hover);
+}
+.table {
+  display: none;
+}
+.cardsContainer {
+  margin: 3rem 0;
+  height: 62vh;
+  overflow: hidden;
+}
+.skillsTecno {
+}
+.skillsDesing {
+}
+.softSkills {
+}
+.card {
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  border: 1px solid rgba(255, 255, 255, 0.175);
+  border-radius: 30px;
+  padding: 2rem;
+  height: 25vh;
+  width: 15vw;
+  margin: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.card > p {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+img {
+  height: 50%;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer y form */
+.footer {
+  height: 100dvh;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.titleContact {
+  align-self: flex-end;
+  font-weight: 200;
+}
+
+.formulario {
+  max-width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo {
+  margin-bottom: 3rem;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+  font-size: 1.5em;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid var(--color-violeta);
+  outline: none;
+  resize: none;
+}
+
+.campo textarea {
+  height: 100px;
+}
+
+.campo textarea::placeholder {
+  color: var(--color-fuente);
+}
+
+.enviar {
+  align-self: flex-end;
+  background-color: var(--color-violeta);
+  color: #fff;
+  padding: 1.2rem 3.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 200ms all ease-in-out;
+}
+
+.enviar:hover {
+  background-color: var(--color-violeta-hover);
+}
